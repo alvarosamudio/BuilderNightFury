@@ -5,10 +5,14 @@ https://willhaley.com/blog/custom-debian-hard-drive-install/
 Will Haley 
 
 ## 1.- Initial script will download all the required files.
+
     ./01_pre_reqs.sh
+
 ## 2.- Customize the os_config.txt & configuration settings for your distro 
-Update your installation FOLDER, DISTRO_NAME and VERSION
-    ./02_debootstrap.sh
+Update your installation FOLDER, DISTRO_NAME and VERSION.
+    
+	./02_debootstrap.sh
+
 ## 3.- Start executing the scripts in order.
     ./03_chroot.sh
 ### Select Which Distro you like to Build...
@@ -31,9 +35,13 @@ In script 03 you can determine the packages to install Additionally multiple fil
 
   
 ## 4.- Option to built BIOS+UEFI for compatibility.
+
     ./04_MakeSquashfs.sh
+
 ## 5.- The result ISO Image will be from 200MB Text Only to 300MB LXDE
+
     ./05_BiosUEFI_ISO.sh
+
 ## 6.- Copy the ISO and boot from it 😀👍
 #     ENJOY IT
 
