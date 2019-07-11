@@ -1,0 +1,3 @@
+LIVE_BOOT=nightfury_build
+DISTRO_NAME=NightFury
+VERSION=1.0
