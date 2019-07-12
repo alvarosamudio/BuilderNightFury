@@ -18,5 +18,6 @@ http://ftp.us.debian.org/debian
 
 sudo cp ./03_*.sh $HOME/$LIVE_BOOT/chroot
 sudo cp ./os_config.txt $HOME/$LIVE_BOOT/chroot
+sudo cp ./os_clean.sh $HOME/$LIVE_BOOT/chroot
 
 sudo chroot $HOME/$LIVE_BOOT/chroot
