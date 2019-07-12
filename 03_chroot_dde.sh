@@ -20,7 +20,7 @@
 
 #apt-get install -y --no-install-recommends \
 #    network-manager net-tools wireless-tools wpagui \
-#    curl openssh-server openssh-client tor privoxy \
+#    curl openssh-server openssh-client tor privoxy gparted gpart \
 #    blackbox xserver-xorg-core xserver-xorg xinit xterm \
 #    screenfetch screen lxterminal vim \
 #    nano dde && \

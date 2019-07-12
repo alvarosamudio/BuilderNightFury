@@ -20,14 +20,14 @@ apt-get install -y --no-install-recommends \
 
 apt-get install -y --no-install-recommends \
     network-manager net-tools wireless-tools wpagui \
-    curl openssh-server openssh-client tor privoxy \
+    curl openssh-server openssh-client tor privoxy gparted gpart \
     xserver-xorg-core xserver-xorg xinit xterm \
-    screenfetch screen lxterminal vim \
-    nano && \
+    screenfetch screen lxterminal vim apt-transport-https \
+    nano software-properties-common wget  && \
 apt-get clean
 
-wget http://gandalfn.ovh/debian/pantheon-debian.gpg.key -O- | apt-key add -
-echo "deb http://gandalfn.ovh/debian stretch-loki main contrib" > /etc/apt/sources.list.d/pantheon-debian.list
+wget https://gandalfn.ovh/debian/pool/main/p/pantheon-debian-repos/pantheon-debian-repos_5.0-0+pantheon+buster+juno1_all.deb
+dpkg -i pantheon-debian-repos_5.0-0+pantheon+buster+juno1_all.deb
 apt-get update
 apt-get install -y pantheon synaptic elementary-tweaks
 apt-get clean
