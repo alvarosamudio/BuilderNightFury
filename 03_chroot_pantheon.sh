@@ -15,6 +15,7 @@ apt-cache search linux-image
 
 apt-get update && \
 apt-get install -y --no-install-recommends \
+    linux-image-amd64 \    
     live-boot \
     systemd-sysv
 
@@ -23,11 +24,11 @@ apt-get install -y --no-install-recommends \
     curl openssh-server openssh-client tor privoxy gparted gpart \
     xserver-xorg-core xserver-xorg xinit xterm \
     screenfetch screen lxterminal vim apt-transport-https \
-    nano software-properties-common wget  && \
+    nano software-properties-common && \
 apt-get clean
 
-wget https://gandalfn.ovh/debian/pool/main/p/pantheon-debian-repos/pantheon-debian-repos_5.0-0+pantheon+buster+juno1_all.deb
-dpkg -i pantheon-debian-repos_5.0-0+pantheon+buster+juno1_all.deb
+wget http://gandalfn.ovh/debian/pantheon-debian.gpg.key -O- | apt-key add -
+echo "deb http://gandalfn.ovh/debian buster-juno main contrib os-patches" > /etc/apt/sources.list.d/pantheon-debian.list
 apt-get update
 apt-get install -y pantheon synaptic elementary-tweaks
 apt-get clean
