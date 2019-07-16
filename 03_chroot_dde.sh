@@ -24,7 +24,15 @@
 #    curl openssh-server openssh-client tor privoxy gparted gpart \
 #    blackbox xserver-xorg-core xserver-xorg xinit xterm \
 #    screenfetch screen lxterminal vim \
-#    nano dde && \
+#    nano && \
+#apt-get clean
+
+#wget http://packages.deepin.com/deepin/pool/main/d/deepin-keyring/deepin-#keyring_2019.01.09-1_all.deb
+#dpkg -i deepin-keyring_2019.01.09-1_all.deb
+#rm deepin-keyring_2019.01.09-1_all.deb
+#echo "deb http://packages.deepin.com/deepin lion main contrib non-free" > /etc/#apt/sources.list.d/dde.list
+#apt-get update
+#apt-get install -y dde
 #apt-get clean
 
 #passwd root
